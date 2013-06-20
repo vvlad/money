@@ -109,7 +109,7 @@ class Money
 
       def register(curr)
         key = curr[:iso_code].downcase.to_sym
-        @table[key] = curr
+        table[key] = curr
         @stringified_keys = stringify_keys
       end
 
